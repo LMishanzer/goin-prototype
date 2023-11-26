@@ -1,8 +1,6 @@
 import { FC } from "react";
 import { useSearchParams } from "react-router-dom";
-import { ListArtist } from "../components/ListArtist";
 import { Footer } from "../templates/Footer";
-import { GoinHeader } from "../templates/GoinHeader";
 import { SearchHeader } from "../templates/SearchHeader";
 import { Stack } from "@mui/material";
 import { CardArtist } from "../components/CardArtist";
@@ -18,13 +16,13 @@ export const PageSearch: FC = () => {
   const query = searchParams.get("query") ?? "";
 
   const foundArtists: Artist[] = artists.filter((a) =>
-    a.artist.toLocaleLowerCase().includes(query.toLowerCase())
+    a.name.toLocaleLowerCase().includes(query.toLowerCase())
   );
 
   const foundEvents = foundArtists.flatMap((a) =>
     a.upcomingEvents.map((e) => ({
       img: a.image,
-      name: a.artist,
+      name: a.name,
       eventDetail: { ...e, date: new Date(Date.parse(e.date)) },
     }))
   );
@@ -55,7 +53,7 @@ export const PageSearch: FC = () => {
             {foundArtists.map((artist) => (
               <RouterLink to={`/artist-detail/${artist.id}`} key={artist.id}>
                 <CardArtist
-                  name={artist.artist}
+                  name={artist.name}
                   img={artist.image}
                   key={artist.id}
                 />

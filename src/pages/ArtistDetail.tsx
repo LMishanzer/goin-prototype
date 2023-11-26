@@ -22,13 +22,18 @@ export const ArtistDetail = () => {
       <GoinHeader />
       <div className={styles.detailsContainer}>
         <div className={styles.details}>
-          <h2 className={styles.header}>{artist.artist}</h2>
+          <h2 className={styles.header}>{artist.name}</h2>
           <div className={styles.mainContent}>
             <p className={styles.info}>{artist.info}</p>
             <img className={styles.image} src={artist.image} />
           </div>
         </div>
-        <ListArtist />
+        <div className={styles.additional}>
+          <ListArtist />
+          <div className={styles.eventList}>
+            
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
