@@ -1,39 +1,45 @@
 [
     {
-        "id": 13,
+        "id": "13",
         "name": "Rammstein",
         "info": "Rammstein is a German Neue Deutsche Härte band formed in Berlin in 1994. The band's lineup—consisting of lead vocalist Till Lindemann, lead guitarist Richard Kruspe, rhythm guitarist Paul Landers, bassist Oliver Riedel, drummer Christoph Schneider, and keyboardist Christian \"Flake\" Lorenz—has remained unchanged throughout their history, along with their approach to songwriting, which consists of Lindemann writing and singing the lyrics over instrumental pieces the rest of the band has completed beforehand. Prior to their formation, some members were associated with the punk rock acts Feeling B and First Arsch.",
         "image": "/images/rammstein.jpg",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }
         ],
         "upcomingEvents": [
             {
+                "id": "5",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "5",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "5",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }
@@ -46,34 +52,40 @@
         "image": "/images/red_hot.png",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }
         ],
         "upcomingEvents": [
             {
+                "id": "0",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "0",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "0",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }
@@ -86,34 +98,40 @@
         "image": "/images/green_day.png",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }
         ],
         "upcomingEvents": [
             {
+                "id": "3",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "3",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "3",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }
@@ -126,34 +144,40 @@
         "image": "/images/red_hot.png",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }
         ],
         "upcomingEvents": [
             {
+                "id": "4",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "4",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "4",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }
@@ -166,20 +190,23 @@
         "image": "/images/yzomanidas.png",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }
@@ -206,20 +233,23 @@
         "image": "/images/girl_in_red.png",
         "relatedArtists": [
             {
+                "id": "0",
                 "name": "Red Hot Chili Peppers",
                 "image": "/images/red_hot.png",
                 "place": "Rock cafe",
                 "date": "01.10.2023"
             },
             {
+                "id": "3",
                 "name": "Green Day",
                 "image": "/images/green_day.png",
                 "place": "Rock cafe",
                 "date": "07.04.2024"
             },
             {
+                "id": "4",
                 "name": "Arctic Monkeys",
-                "image": "/images/arctic_moonkeys.png",
+                "image": "/images/arctic_monkeys.png",
                 "place": "Rock cafe",
                 "date": "09.05.2024"
             }

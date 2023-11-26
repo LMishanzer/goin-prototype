@@ -1,0 +1,74 @@
+[
+    {
+        "id": "0",
+        "when": "01.10.2023",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "0",
+                "name": "Red Hot Chili Peppers",
+                "image": "/images/red_hot.png"
+            }
+        ]
+    },
+    {
+        "id": "1",
+        "when": "11.04.2023",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "1",
+                "name": "Yzomanidas",
+                "image": "/images/yzomanidas.png"
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "when": "01.02.2024",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "2",
+                "name": "Girl in Red",
+                "image": "/images/girl_in_red.png"
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "when": "01.02.2024",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "3",
+                "name": "Green Day",
+                "image": "/images/green_day.png"
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "when": "09.05.2024",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "4",
+                "name": "Arctic Monkeys",
+                "image": "/images/arctic_monkeys.png"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "when": "12.12.2023",
+        "venue": "Rock cafe",
+        "artists": [
+            {
+                "id": "13",
+                "name": "Rammstein",
+                "image": "/images/rammstein.jpg"
+            }
+        ]
+    }
+]
