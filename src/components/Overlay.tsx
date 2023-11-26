@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { CategoryCard } from "./CategoryCard";
-import { Modal, Backdrop, Fade, Box } from "@mui/material";
+import { Modal, Backdrop, Fade, Box, Button } from "@mui/material";
+import CloseIcon from "@mui/icons-material/Close";
 
 interface OverlayProps {
   title: string;
@@ -56,11 +57,33 @@ export const Overlay: FC<OverlayProps> = ({ title, open, onClose }) => {
     >
       <Fade in={open}>
         <Box sx={style}>
-          <h1
-            style={{ textAlign: "center", fontWeight: "600", fontSize: "33px" }}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: "40px",
+            }}
           >
-            {title}
-          </h1>
+            <h1
+              style={{
+                textAlign: "center",
+                fontWeight: "600",
+                fontSize: "33px",
+              }}
+            >
+              {title}
+            </h1>
+            <Button
+              style={{
+                color: "#fff",
+              }}
+              onClick={onClose}
+            >
+              <CloseIcon sx={{ fontSize: "33px" }} />
+            </Button>
+          </div>
+
           <div
             style={{
               display: "flex",

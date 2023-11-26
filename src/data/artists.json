@@ -1,5 +1,6 @@
 [
     {
+        "id": 13,
         "name": "Rammstein",
         "info": "Rammstein is a German Neue Deutsche Härte band formed in Berlin in 1994. The band's lineup—consisting of lead vocalist Till Lindemann, lead guitarist Richard Kruspe, rhythm guitarist Paul Landers, bassist Oliver Riedel, drummer Christoph Schneider, and keyboardist Christian \"Flake\" Lorenz—has remained unchanged throughout their history, along with their approach to songwriting, which consists of Lindemann writing and singing the lyrics over instrumental pieces the rest of the band has completed beforehand. Prior to their formation, some members were associated with the punk rock acts Feeling B and First Arsch.",
         "image": "/images/rammstein.jpg",
@@ -39,6 +40,7 @@
         ]
     },
     {
+        "id": "0",
         "name": "Red Hot Chili Peppers",
         "info": "Red Hot Chili Peppers, commonly abbreviated as RHCP or Chili Peppers, are an American rock band formed in Los Angeles in 1982, comprising vocalist Anthony Kiedis, bassist Flea, drummer Chad Smith, and guitarist John Frusciante. Their music incorporates elements of alternative rock, funk, punk rock, hard rock, hip hop, and psychedelic rock. Their eclectic range has influenced genres such as funk metal, rap metal, rap rock, and nu metal. With over 120 million records sold worldwide, the Red Hot Chili Peppers are one of the best-selling bands of all time. They hold the records for most number-one singles, most cumulative weeks at number one and most top-ten songs on the Billboard Alternative Songs chart. They have won six Grammy Awards, were inducted into the Rock and Roll Hall of Fame in 2012, and in 2022 received a star on the Hollywood Walk of Fame.",
         "image": "/images/red_hot.png",
@@ -78,6 +80,7 @@
         ]
     },
     {
+        "id": "3",
         "name": "Green Day",
         "info": "Green Day is an American rock band formed in the East Bay of California in 1987 by lead vocalist and guitarist Billie Joe Armstrong, together with bassist and backing vocalist Mike Dirnt. For most of the band's career they have been a power trio with drummer Tré Cool, who replaced John Kiffmeyer in 1990 before the recording of the band's second studio album, Kerplunk (1991). Before taking its current name in 1989, Green Day was called Blood Rage, then Sweet Children. They were part of the late 1980s/early 1990s Bay Area punk scene that emerged from the 924 Gilman Street club in Berkeley, California. The band's early releases were with the independent record label Lookout! Records. In 1994, their major-label debut Dookie, released through Reprise Records, became a breakout success and eventually shipped over 10 million copies in the U.S. Alongside fellow California punk bands Bad Religion, the Offspring, Rancid, NOFX, Pennywise and Social Distortion, Green Day is credited with popularizing mainstream interest in punk rock in the U.S.",
         "image": "/images/green_day.png",
@@ -117,6 +120,7 @@
         ]
     },
     {
+        "id": "4",
         "name": "Arctic Monkeys",
         "info": "Arctic Monkeys are an English rock band formed in Sheffield in 2002. The group consists of lead singer Alex Turner, drummer Matt Helders, guitarist Jamie Cook and bassist Nick O'Malley. Former bassist Andy Nicholson left the band in 2006 shortly after their debut album was released. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet, with commentators suggesting they represented the possibility of a change in the way in which new bands are promoted and marketed. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), received widespread critical acclaim upon release and topped the UK Albums Chart, becoming the fastest-selling debut album in British chart history at the time. It won Best British Album at the 2007 Brit Awards and has since been hailed as one of the greatest debut albums. The band's second album, Favourite Worst Nightmare (2007), was also acclaimed by critics and won Best British Album at the 2008 Brit Awards. They went on to release Humbug (2009) and Suck It and See (2011), both of which were well-received critically, albeit not to the extent of their first two albums.",
         "image": "/images/red_hot.png",
@@ -156,6 +160,7 @@
         ]
     },
     {
+        "id": "1",
         "name": "Yzomanidas",
         "info": "Jakub Vlček, better known as Yzomandias and formerly Logic, is a Czech rapper and owner of Milion+ Entertainment, a record label in which he also works. He is a pioneer of trap on the Czech rap scene. Apart from the music genre, he also translates the visual-style culture of American rappers (hairstyles - braids, dreadlocks, facial tattoos, street clothes from leading designers - Gucci, Balenciaga, Louis Vuitton, Prada and others) into the domestic context. He started as DJ Logic in the groups KIDZ, Zutroy Clique and in the controversial Fuerza Arma. He soon adopted rapping to music production and started recording under the pseudonym Logic. During this time, he gradually became known for his mixtape series Player of the Year and also for his mixtape Czech Made Man. In 2015, he co-founded the label Milion+ and released his debut solo album Yzomandias, on which he completed the transformation into the new character Yzomandias. Subsequently, he has released a series of successful albums in the trap genre, Ze dna (2016), Zhora vypadá všechno líp (2017), Sbohem Roxano (2018), Dobrá duše, srdce z zlatata (2019) and Prozyum (2020) and a series of mixtapes J.Eden, J.Eden Dva and J.Eden E-Gen. Most of the albums have received at least platinum certification for sales. Prozyum was awarded the 2020 Angel Genre Award, where it was also nominated for Video of the Year for the video for the single \"Melange\".",
         "image": "/images/yzomanidas.png",
@@ -195,6 +200,7 @@
         ]
     },
     {
+        "id": "2",
         "name": "Girl in Red",
         "info": "Marie Ulven Ringheim (born 16 February 1999) is a Norwegian singer-songwriter and record producer, known for her indie pop project Girl in Red (stylized in all lowercase). Her first EPs Chapter 1 (2018) and Chapter 2 (2019) were recorded in her bedroom and feature songs about romance and mental health. Released through AWAL, her debut studio album If I Could Make It Go Quiet (2021) was a critical and commercial success, and won three Norwegian Grammy Awards, including Album of the Year.",
         "image": "/images/girl_in_red.png",

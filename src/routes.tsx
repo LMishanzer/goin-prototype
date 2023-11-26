@@ -23,15 +23,15 @@ export const routes = createBrowserRouter([
     element: <PageBlog />,
   },
   {
-    path: "artist-detail",
+    path: "artist-detail/:artistId",
     element: <ArtistDetail />,
   },
   {
-    path: "place-detail",
+    path: "place-detail", // todo: create page? do we need it?
     element: <div>Place Detail</div>,
   },
   {
-    path: "event-detail",
+    path: "event-detail/:eventId",
     element: <ArtistDetail />,
   },
   {

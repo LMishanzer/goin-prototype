@@ -1,9 +1,48 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 // import { Link } from "react-router-dom";
-import { Button, TextField } from "@mui/material";
+import { Button, IconButton, Snackbar, TextField } from "@mui/material";
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
+import React from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 export const Footer: FC = () => {
+  const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
+
+  const handleSubscribe = () => {
+    setOpen(true);
+    setEmail("");
+  };
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
     <section id={styles.footer}>
       <div className={styles.contentWrapper}>
@@ -24,10 +63,10 @@ export const Footer: FC = () => {
                   <a href="#">FAQs</a>
                 </li>
                 <li>
-                  <a href="#">send feedback</a>
+                  <Link to="/feedback">send feedback</Link>
                 </li>
                 <li>
-                  <a href="#">for performers</a>
+                  <Link to="/for-performers">for performers</Link>
                 </li>
                 <li>
                   <a href="#">careers</a>
@@ -69,16 +108,33 @@ export const Footer: FC = () => {
                 color="custom"
                 focused
                 InputProps={{
-                  style: { color: "white" }, // Replace 'red' with your desired text color
+                  style: { color: "white" },
                 }}
+                value={email}
+                onChange={handleEmailChange}
               />
-              <Button variant="contained" size="medium" color="custom">
+              <Button
+                variant="contained"
+                size="medium"
+                color="custom"
+                onClick={handleSubscribe}
+              >
                 Subscribe
               </Button>
             </div>
           </form>
         </section>
       </div>
+
+      {/* Snackbar to display notification */}
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Thank you for subscription!"
+        action={action}
+      />
     </section>
   );
 };

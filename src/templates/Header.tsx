@@ -17,7 +17,7 @@ export const Header: FC = () => {
     <header className={styles.header}>
       <div className="content-wrapper">
         <div className={styles.menu}>
-          <h1 className={styles.logo}>GOIN</h1> 
+          <h1 className={styles.logo}>GOIN</h1>
           <nav>
             <ul className={styles.navItems}>
               <li>
@@ -27,7 +27,7 @@ export const Header: FC = () => {
               </li>
               <li>
                 <Button sx={{ fontWeight: "600" }} color="custom">
-                  SPOTIFY
+                  <img src="/spotify.svg" />
                 </Button>
               </li>
             </ul>
