@@ -1,0 +1,40 @@
+.feedback-container {
+    color: #fff;
+}
+
+.feedback-container > h1 {
+    font-size: 32px;
+    padding-bottom: 22px;
+}
+
+.feedback-container > span {
+    font-size: 18px;
+    display: block;
+    padding-bottom: 42px;
+}
+
+.feedback-form {
+    /* display: inline-block; */
+    padding: 50px;
+    border-radius: 13px;
+    /* margin: 20px; */
+    backdrop-filter: blur(40px);
+    color: #fff;
+
+    background: linear-gradient(135deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.1) 100%);
+    outline: thin solid rgba(255,255,255,.3);
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-weight: 600;
+    width: 800px;
+}
+
+
+.feedback-form > form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

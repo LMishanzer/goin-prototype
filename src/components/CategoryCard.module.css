@@ -1,0 +1,10 @@
+.categoryCard {
+    font-weight: 800;
+    border-radius: 22px;
+    outline: thin solid rgba(255, 255, 255, .7);
+    min-width: 170px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,56 @@
+
+.card {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    height: 270px;
+    width: 250px;
+}
+
+.blur-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(7px); 
+}
+
+.image {
+    height: 100%;
+}
+/* -------------- EVENT -------------- */
+.date {
+    position: absolute;
+    bottom: -25px;
+    right: 13px;
+    color: #fff;
+    font-weight: medium;
+    font-size: 16px;
+    background: #0F4EA6;
+    display: block;
+    z-index: 13;
+}
+
+.event__blur-overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0,0,0,.6);
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+    padding: 10px 10px 30px 10px;
+    backdrop-filter: blur(7px); 
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}

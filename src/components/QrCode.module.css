@@ -1,0 +1,47 @@
+.glass {
+    display: inline-block;
+    padding: 50px 70px;
+    border-radius: 13px;
+    margin: 20px;
+    backdrop-filter: blur(40px);
+    color: #fff;
+
+    background: linear-gradient(135deg, rgba(255,255,255,.2) 0%, rgba(255,255,255,.1) 100%);
+    outline: thin solid rgba(255,255,255,.3);
+    overflow: hidden;
+}
+
+.glass::before {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: rgba(15,78,166,.7);
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(20px);
+}
+
+.glass::after {
+    content: '';
+    display: block;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    background-color: rgba(36,15,166,.3);
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+    border-radius: 20px;
+    filter: blur(20px);
+}
+
+.glass-content {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    font-weight: 600;
+}

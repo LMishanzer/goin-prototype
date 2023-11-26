@@ -1,0 +1,27 @@
+.detailsContainer {
+    background-color: #09111C;
+    padding: 20px 30px;
+}
+
+.details {
+    color: #ccc;
+
+}
+
+.header {
+    font-size: 50px;
+}
+
+.info {
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.mainContent {
+    display: flex;
+    padding: 40px 0;
+}
+
+.image {
+    border-radius: 20px;
+}

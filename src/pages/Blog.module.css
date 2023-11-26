@@ -1,0 +1,13 @@
+.paragraph {
+    padding: 30px 0;
+}
+
+.paragraph > h2 {
+    font-weight: 600;
+    padding-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.paragraph {
+    line-height: 40px;
+}

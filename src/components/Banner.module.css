@@ -1,0 +1,17 @@
+.banner {
+    min-width: 100%;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(42, 51, 74, .24);
+    z-index: 1;
+    backdrop-filter: blur(5px);
+}
