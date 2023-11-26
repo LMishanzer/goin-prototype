@@ -10,7 +10,7 @@ export const Feedback = () => {
       <div
         style={{
           background: "#0C1326",
-          minHeight: "100vh",
+          minHeight: "95vh",
           display: "flex",
           alignItems: "center",
         }}
