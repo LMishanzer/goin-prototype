@@ -4,6 +4,7 @@ import { Feedback } from "./pages/Feedback";
 import { PageMain } from "./pages/Main";
 import { ForPerformers } from "./pages/ForPerformers";
 import { ArtistDetail } from "./pages/ArtistDetail";
+import { PageSearch } from "./pages/Search";
 
 export const routes = createBrowserRouter([
   {
@@ -36,6 +37,6 @@ export const routes = createBrowserRouter([
   },
   {
     path: "search",
-    element: <div>Search Result Page</div>,
+    element: <PageSearch />,
   },
 ]);
