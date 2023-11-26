@@ -1,7 +1,7 @@
 import { FC } from "react";
 import styles from "./GoinHeader.module.css";
 import { Button } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
@@ -18,28 +18,37 @@ export const GoinHeader: FC = () => {
 
   return (
     <header className={styles.header}>
-      <div className={styles.navigation}>
-        <Button
-          sx={{ color: "#fff" }}
-          onClick={goBack}
-          className={styles.navbutton}
-        >
-          <ChevronLeftIcon />
-        </Button>
-        <Button
-          sx={{ color: "#fff" }}
-          onClick={goForward}
-          className={styles.navbutton}
-        >
-          <ChevronRightIcon />
-        </Button>
-      </div>
-      <div className={styles.logoContainer}>
-        <h1 className={styles.logo}>GOIN</h1>
-      </div>
-      <div className={styles.options}>
-        <p>ENG</p>
-        <img src="/spotify.svg" />
+      <div className={styles.headerContent + " content-wrapper"}>
+        <div className={styles.navigation}>
+          <Button
+            sx={{ color: "#fff" }}
+            onClick={goBack}
+            className={styles.navbutton}
+          >
+            <ChevronLeftIcon />
+          </Button>
+          <Button
+            sx={{ color: "#fff" }}
+            onClick={goForward}
+            className={styles.navbutton}
+          >
+            <ChevronRightIcon />
+          </Button>
+        </div>
+        <div className={styles.logoContainer}>
+          <Link className={styles.mainLink} to="/">
+            <h1 className={styles.logo}>GOIN</h1>
+          </Link>
+        </div>
+        <div className={styles.options}>
+          <Button sx={{ fontWeight: "600" }} color="custom">
+            ENG
+          </Button>
+
+          <Button sx={{ fontWeight: "600" }} color="custom">
+            <img src="/spotify.svg" />
+          </Button>
+        </div>
       </div>
     </header>
   );
