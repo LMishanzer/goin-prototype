@@ -1,17 +1,23 @@
 import { Footer } from "../templates/Footer";
 import { GoinHeader } from "../templates/GoinHeader";
 import styles from "./ArtistDetail.module.css";
-import data from '../data/artists.json';
+import data from "../data/artists.json";
 import { ListArtist } from "../components/ListArtist";
-// import { useSearchParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react";
+
+type Artist = (typeof data)[0];
 
 export const ArtistDetail = () => {
-  // const [searchParams] = useSearchParams();
-  // const artistName = searchParams.get("artistName");
-  const artistName = 'Rammstein';
-  const artist = data.filter(a => a.artist === artistName)[0];
+  const { eventId } = useParams();
+  const [artist, setArtist] = useState<Artist>();
 
-  return (
+  useEffect(() => {
+    const _artist = data.find((a) => a.id == eventId);
+    setArtist(_artist);
+  }, [eventId]);
+
+  return artist ? (
     <div>
       <GoinHeader />
       <div className={styles.detailsContainer}>
@@ -26,5 +32,7 @@ export const ArtistDetail = () => {
       </div>
       <Footer />
     </div>
+  ) : (
+    <div>NOT FOUND</div>
   );
 };
