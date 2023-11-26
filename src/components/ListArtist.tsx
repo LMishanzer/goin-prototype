@@ -58,7 +58,7 @@ export const ListArtist: FC<{ [key: string]: any }> = (props) => {
         justifyContent="space-between"
       >
         {artists.map((artist) => (
-          <RouterLink to={`/event-detail/${artist.id}`} key={artist.id}>
+          <RouterLink to={`/artist-detail/${artist.id}`} key={artist.id}>
             <CardArtist name={artist.name} img={artist.img} key={artist.id} />
           </RouterLink>
         ))}

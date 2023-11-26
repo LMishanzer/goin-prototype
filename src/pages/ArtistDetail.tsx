@@ -9,13 +9,13 @@ import { useEffect, useState } from "react";
 type Artist = (typeof data)[0];
 
 export const ArtistDetail = () => {
-  const { eventId } = useParams();
+  const { artistId } = useParams();
   const [artist, setArtist] = useState<Artist>();
 
   useEffect(() => {
-    const _artist = data.find((a) => a.id == eventId);
+    const _artist = data.find((a) => a.id == artistId);
     setArtist(_artist);
-  }, [eventId]);
+  }, [artistId]);
 
   return artist ? (
     <div>
