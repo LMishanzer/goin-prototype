@@ -32,7 +32,7 @@ export const routes = createBrowserRouter([
   },
   {
     path: "event-detail/:eventId",
-    element: <EventDetail />,
+    element: <ArtistDetail />,
   },
   {
     path: "search",

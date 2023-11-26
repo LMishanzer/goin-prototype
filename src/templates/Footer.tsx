@@ -1,10 +1,42 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 // import { Link } from "react-router-dom";
-import { Button, TextField } from "@mui/material";
+import { Button, IconButton, Snackbar, TextField } from "@mui/material";
 import styles from "./Footer.module.css";
 import { Link } from "react-router-dom";
+import React from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 export const Footer: FC = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleSubscribe = () => {
+    setOpen(true);
+  };
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
     <section id={styles.footer}>
       <div className={styles.contentWrapper}>
@@ -73,13 +105,28 @@ export const Footer: FC = () => {
                   style: { color: "white" }, // Replace 'red' with your desired text color
                 }}
               />
-              <Button variant="contained" size="medium" color="custom">
+              <Button
+                variant="contained"
+                size="medium"
+                color="custom"
+                onClick={handleSubscribe}
+              >
                 Subscribe
               </Button>
             </div>
           </form>
         </section>
       </div>
+
+      {/* Snackbar to display notification */}
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Thank you for subscription!"
+        action={action}
+      />
     </section>
   );
 };
