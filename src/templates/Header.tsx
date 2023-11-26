@@ -3,15 +3,36 @@ import LibraryMusicOutlinedIcon from "@mui/icons-material/LibraryMusicOutlined";
 import LocationOnOutlinedIcon from "@mui/icons-material/LocationOnOutlined";
 import PersonOutlineOutlinedIcon from "@mui/icons-material/PersonOutlineOutlined";
 import { Button, Stack } from "@mui/material";
-import { FC } from "react";
+import { FC, useState } from "react";
 import styles from "./Header.module.css";
 import React from "react";
 import { Overlay } from "../components/Overlay";
+import { useNavigate } from "react-router-dom";
 
 export const Header: FC = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  // categories
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+
+  const navigate = useNavigate();
+
+  const handleSearch = (query: string) => {
+    console.log(`Performing search for: ${query}`);
+  };
+
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchQuery(event.target.value);
+  };
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter") {
+      handleSearch(searchQuery);
+      navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
+    }
+  };
 
   return (
     <header className={styles.header}>
@@ -38,6 +59,9 @@ export const Header: FC = () => {
           <input
             placeholder="Search for artist, event, genre..."
             className={styles.searchInput}
+            value={searchQuery}
+            onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
           />
         </section>
 
