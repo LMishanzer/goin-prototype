@@ -8,9 +8,15 @@ import CloseIcon from "@mui/icons-material/Close";
 
 export const Footer: FC = () => {
   const [open, setOpen] = useState(false);
+  const [email, setEmail] = useState("");
+
+  const handleEmailChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(event.target.value);
+  };
 
   const handleSubscribe = () => {
     setOpen(true);
+    setEmail("");
   };
 
   const handleClose = (
@@ -102,8 +108,10 @@ export const Footer: FC = () => {
                 color="custom"
                 focused
                 InputProps={{
-                  style: { color: "white" }, // Replace 'red' with your desired text color
+                  style: { color: "white" },
                 }}
+                value={email}
+                onChange={handleEmailChange}
               />
               <Button
                 variant="contained"
