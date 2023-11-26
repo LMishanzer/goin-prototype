@@ -19,17 +19,12 @@ export const Header: FC = () => {
 
   const navigate = useNavigate();
 
-  const handleSearch = (query: string) => {
-    console.log(`Performing search for: ${query}`);
-  };
-
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(event.target.value);
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === "Enter") {
-      handleSearch(searchQuery);
       navigate(`/search?query=${encodeURIComponent(searchQuery)}`);
     }
   };
