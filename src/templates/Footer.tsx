@@ -2,6 +2,7 @@ import { FC } from "react";
 // import { Link } from "react-router-dom";
 import { Button, TextField } from "@mui/material";
 import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
 
 export const Footer: FC = () => {
   return (
@@ -24,10 +25,10 @@ export const Footer: FC = () => {
                   <a href="#">FAQs</a>
                 </li>
                 <li>
-                  <a href="#">send feedback</a>
+                  <Link to="/feedback">send feedback</Link>
                 </li>
                 <li>
-                  <a href="#">for performers</a>
+                  <Link to="/for-performers">for performers</Link>
                 </li>
                 <li>
                   <a href="#">careers</a>
