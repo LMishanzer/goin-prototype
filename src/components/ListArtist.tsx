@@ -2,6 +2,7 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import { Link, Stack, Typography, styled } from "@mui/material";
 import { FC } from "react";
 import { CardArtist } from "./CardArtist";
+import { Link as RouterLink } from "react-router-dom";
 
 type Artist = { id: number; name: string; img: string };
 
@@ -57,7 +58,9 @@ export const ListArtist: FC<{ [key: string]: any }> = (props) => {
         justifyContent="space-between"
       >
         {artists.map((artist) => (
-          <CardArtist name={artist.name} img={artist.img} key={artist.id} />
+          <RouterLink to={`/event-detail/${artist.id}`} key={artist.id}>
+            <CardArtist name={artist.name} img={artist.img} key={artist.id} />
+          </RouterLink>
         ))}
       </Stack>
     </div>
