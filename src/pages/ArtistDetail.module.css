@@ -1,6 +1,6 @@
 .detailsContainer {
     background-color: #09111C;
-    padding: 20px 30px;
+    padding: 50px;
 }
 
 .details {
@@ -19,7 +19,9 @@
 
 .mainContent {
     display: flex;
-    padding: 40px 0;
+    padding: 25px 0;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .image {

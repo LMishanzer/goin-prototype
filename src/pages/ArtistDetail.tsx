@@ -9,20 +9,25 @@ export const ArtistDetail = () => {
   // const [searchParams] = useSearchParams();
   // const artistName = searchParams.get("artistName");
   const artistName = 'Rammstein';
-  const artist = data.filter(a => a.artist === artistName)[0];
+  const artist = data.filter(a => a.name === artistName)[0];
 
   return (
     <div>
       <GoinHeader />
       <div className={styles.detailsContainer}>
         <div className={styles.details}>
-          <h2 className={styles.header}>{artist.artist}</h2>
+          <h2 className={styles.header}>{artist.name}</h2>
           <div className={styles.mainContent}>
             <p className={styles.info}>{artist.info}</p>
             <img className={styles.image} src={artist.image} />
           </div>
         </div>
-        <ListArtist />
+        <div className={styles.additional}>
+          <ListArtist />
+          <div className={styles.eventList}>
+            
+          </div>
+        </div>
       </div>
       <Footer />
     </div>
