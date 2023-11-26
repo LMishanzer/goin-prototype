@@ -1,6 +1,8 @@
 import { ChangeEvent, FC, FormEvent, useState } from "react";
 import styles from "./FeedbackForm.module.css";
-import { Button, TextField, styled } from "@mui/material";
+import { Button, IconButton, Snackbar, TextField, styled } from "@mui/material";
+import React from "react";
+import CloseIcon from "@mui/icons-material/Close";
 
 const StyledTextField = styled(TextField)`
   & input {
@@ -44,16 +46,30 @@ interface FeedbackFormProps {
   formTitle: string;
 }
 
+const emptyFormData = {
+  name: "",
+  email: "",
+  message: "",
+};
+
 export const FeedbackForm: FC<FeedbackFormProps> = ({
   title,
   subtitle,
   formTitle,
 }) => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+  const [open, setOpen] = useState(false);
+  const [formData, setFormData] = useState(emptyFormData);
+
+  const handleClose = (
+    event: React.SyntheticEvent | Event,
+    reason?: string
+  ) => {
+    if (reason === "clickaway") {
+      return;
+    }
+
+    setOpen(false);
+  };
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -63,9 +79,22 @@ export const FeedbackForm: FC<FeedbackFormProps> = ({
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Add your logic here to handle form submission
-    console.log("Form submitted:", formData);
+    setOpen(true);
+    setFormData({ ...emptyFormData });
   };
+
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={handleClose}
+      >
+        <CloseIcon fontSize="small" />
+      </IconButton>
+    </React.Fragment>
+  );
 
   return (
     <div className={styles.feedbackContainer}>
@@ -123,6 +152,16 @@ export const FeedbackForm: FC<FeedbackFormProps> = ({
           </Button>
         </form>
       </div>
+
+      {/* Snackbar to display notification */}
+      <Snackbar
+        anchorOrigin={{ vertical: "bottom", horizontal: "left" }}
+        open={open}
+        autoHideDuration={6000}
+        onClose={handleClose}
+        message="Your message was sent!"
+        action={action}
+      />
     </div>
   );
 };
