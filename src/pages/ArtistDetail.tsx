@@ -37,7 +37,7 @@ export const ArtistDetail = () => {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-between",
-                    padding: "13px 0",
+                    padding: "13px 0"
                   }}
               >
                 <h2 className={styles.relatedLabel}>Related Artists</h2>
@@ -47,6 +47,7 @@ export const ArtistDetail = () => {
                     style={{
                       display: "flex",
                       alignItems: "center",
+                      color: "#fff"
                     }}
                 >
                   View All
@@ -77,7 +78,30 @@ export const ArtistDetail = () => {
                     <RouterLink to={`/event-detail/${event.id}`} key={event.id}>
                       <div>
                         <div className={styles.eventCard}>
-                          <span>{event.place}</span><span className={styles.chevron}><ChevronRightIcon /></span>
+                          <span>{event.place}</span><span className={styles.chevron}><ChevronRightIcon/></span>
+                        </div>
+                        <div
+                            style={{
+                              backgroundColor: "#0F4EA6",
+                              width: "150px",
+                              height: "40px",
+                              position: "relative",
+                              top: "-20px",
+                              left: "15px",
+                              borderRadius: "15px",
+                              textDecoration: "none",
+                              color: "#fff"
+                            }}
+                        >
+                          <div
+                              style={{
+                                margin: "auto",
+                                width: "100px",
+                                padding: "13px"
+                              }}
+                          >
+                            {event.date}
+                          </div>
                         </div>
                       </div>
                     </RouterLink>
