@@ -31,9 +31,9 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0;
-    margin: 0;
-    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+    width: 1500px;
 }
 
 .options {
