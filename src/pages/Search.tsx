@@ -43,7 +43,7 @@ export const PageSearch: FC = () => {
         style={{ minHeight: "100vh", padding: "40px" }}
         className={"content-wrapper"}
       >
-        <div style={{ marginBottom: "40px" }}>
+        {foundEvents.length === 0 && foundArtists.length === 0 ? (
           <h2
             style={{
               color: "#fff",
@@ -52,48 +52,70 @@ export const PageSearch: FC = () => {
               paddingBottom: "30px",
             }}
           >
-            Artists
+            Nothing Found, try again.
           </h2>
-          <Stack direction="row" spacing={5} useFlexGap flexWrap="wrap">
-            {foundArtists.map((artist) => (
-              <RouterLink to={`/artist-detail/${artist.id}`} key={artist.id}>
-                <CardArtist
-                  name={artist.name}
-                  img={artist.image}
-                  key={artist.id}
-                />
-              </RouterLink>
-            ))}
-          </Stack>
-        </div>
+        ) : (
+          <div>
+            {foundArtists.length > 0 && (
+              <div style={{ marginBottom: "40px" }}>
+                <h2
+                  style={{
+                    color: "#fff",
+                    fontSize: "24px",
+                    fontWeight: 600,
+                    paddingBottom: "30px",
+                  }}
+                >
+                  Artists
+                </h2>
+                <Stack direction="row" spacing={5} useFlexGap flexWrap="wrap">
+                  {foundArtists.map((artist) => (
+                    <RouterLink
+                      to={`/artist-detail/${artist.id}`}
+                      key={artist.id}
+                    >
+                      <CardArtist
+                        name={artist.name}
+                        img={artist.image}
+                        key={artist.id}
+                      />
+                    </RouterLink>
+                  ))}
+                </Stack>
+              </div>
+            )}
 
-        <div style={{ margin: "40px 0" }}>
-          <h2
-            style={{
-              color: "#fff",
-              fontSize: "24px",
-              fontWeight: 600,
-              paddingBottom: "30px",
-            }}
-          >
-            Events
-          </h2>
-          <Stack direction="row" spacing={5} useFlexGap flexWrap="wrap">
-            {foundEvents.map((event) => (
-              <RouterLink
-                to={`/event-detail/${event.eventDetail.id}`}
-                key={event.eventDetail.id}
-              >
-                <CardEvent
-                  name={event.name}
-                  img={event.img}
-                  location={event.eventDetail.place}
-                  date={event.eventDetail.date}
-                />
-              </RouterLink>
-            ))}
-          </Stack>
-        </div>
+            {foundEvents.length > 0 && (
+              <div style={{ margin: "40px 0" }}>
+                <h2
+                  style={{
+                    color: "#fff",
+                    fontSize: "24px",
+                    fontWeight: 600,
+                    paddingBottom: "30px",
+                  }}
+                >
+                  Events
+                </h2>
+                <Stack direction="row" spacing={5} useFlexGap flexWrap="wrap">
+                  {foundEvents.map((event) => (
+                    <RouterLink
+                      to={`/event-detail/${event.eventDetail.id}`}
+                      key={event.eventDetail.id}
+                    >
+                      <CardEvent
+                        name={event.name}
+                        img={event.img}
+                        location={event.eventDetail.place}
+                        date={event.eventDetail.date}
+                      />
+                    </RouterLink>
+                  ))}
+                </Stack>
+              </div>
+            )}
+          </div>
+        )}
       </div>
       <Footer />
     </div>
