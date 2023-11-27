@@ -15,8 +15,13 @@ export const PageSearch: FC = () => {
 
   const query = searchParams.get("query") ?? "";
 
-  const foundArtists: Artist[] = artists.filter((a) =>
-    a.name.toLocaleLowerCase().includes(query.toLowerCase())
+  const foundArtists: Artist[] = artists.filter(
+    (a) =>
+      a.name.toLowerCase().includes(query.toLowerCase()) ||
+      a.categories.reduce(
+        (acc, c) => c.toLowerCase().includes(query.toLowerCase()) || acc,
+        false
+      )
   );
 
   const foundEvents = foundArtists.flatMap((a) =>
