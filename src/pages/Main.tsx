@@ -72,14 +72,6 @@ export const PageMain = () => {
             marginTop: "50px",
           }}
         />
-        {/*   <ListArtist
-        key={3}
-        style={{
-          marginTop: "50px",
-        }}
-      /> */}
-
-        {/* <App /> */}
       </div>
 
       <Footer />
