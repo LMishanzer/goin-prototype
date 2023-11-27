@@ -51,7 +51,10 @@ export const EventDetail = () => {
             </li>
             <li>
               <span className={styles.infoProp}>Venue's website:</span>
-              <a href="https://www.vystavistepraha.eu/">
+              <a
+                style={{ color: "#fff" }}
+                href="https://www.vystavistepraha.eu/"
+              >
                 www.vystavistepraha.eu
               </a>
             </li>
@@ -88,7 +91,7 @@ export const EventDetail = () => {
             marginTop="40px"
           >
             {event.artists.map((artist) => (
-              <RouterLink to={`/event-detail/${artist.id}`} key={artist.id}>
+              <RouterLink to={`/artist-detail/${artist.id}`} key={artist.id}>
                 <CardArtist
                   name={artist.name}
                   img={artist.image}
