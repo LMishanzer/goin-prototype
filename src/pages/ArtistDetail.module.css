@@ -8,13 +8,13 @@
 }
 
 .header {
-    font-size: 50px;
+    font-size: 33px;
 }
 
 .info {
-    font-size: 25px;
+    font-size: 18px;
     line-height: 50px;
-    width: auto;
+    width: 1000px;
 }
 
 .mainContent {
@@ -22,44 +22,40 @@
     padding: 25px 0;
     justify-content: space-between;
     gap: 40px;
+    align-items: flex-start;
 }
 
 .image {
     border-radius: 20px;
-    width: 1000px;
+    flex-grow: 1;
 }
 
 .relatedArtists {
-    width: 1000px;
+    width: 800px;
 }
 
 .relatedLabel {
     color: #fff;
     font-size: 30px;
-    padding: 20px;
+    padding-bottom: 30px;
 }
 
 .additional {
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 0;
-    margin: 0;
+    gap: 40px;
 }
 
 .eventList {
-    flex-basis: 200px;
-    flex-grow: 0;
-    margin: 50px 100px;
+    width: 300px;
 }
 
 .eventCard {
     background-color: #281842;
     border-radius: 10px;
     color: #fff;
-    width: 600px;
-    height: 80px;
-    padding: 25px 20px;
+    padding: 15px 20px 30px 20px;
 }
 
 .chevron {
