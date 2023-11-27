@@ -100,7 +100,7 @@ export const PageSearch: FC = () => {
                 <Stack direction="row" spacing={5} useFlexGap flexWrap="wrap">
                   {foundEvents.map((event) => (
                     <RouterLink
-                      to={`/event-detail/${event.eventDetail.id}`}
+                      to={`/event-detail/${event.eventDetail.link_id}`}
                       key={event.eventDetail.id}
                     >
                       <CardEvent
