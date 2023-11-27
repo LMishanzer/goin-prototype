@@ -1,6 +1,7 @@
 [
     {
         "id": "0",
+        "name": "Red Hot Chili Peppers concert",
         "when": "01.10.2023",
         "venue": "Rock cafe",
         "artists": [
@@ -13,6 +14,7 @@
     },
     {
         "id": "1",
+        "name": "YZOMANDIAS II Praha (křest alba)",
         "when": "11.04.2023",
         "venue": "Rock cafe",
         "artists": [
@@ -25,6 +27,7 @@
     },
     {
         "id": "2",
+        "name": "Girl in Red concert",
         "when": "01.02.2024",
         "venue": "Rock cafe",
         "artists": [
@@ -37,6 +40,7 @@
     },
     {
         "id": "3",
+        "name": "Green Day concert",
         "when": "01.02.2024",
         "venue": "Rock cafe",
         "artists": [
@@ -49,6 +53,7 @@
     },
     {
         "id": "4",
+        "name": "Arctic monkeys concert",
         "when": "09.05.2024",
         "venue": "Rock cafe",
         "artists": [
@@ -61,6 +66,7 @@
     },
     {
         "id": "5",
+        "name": "Rammstein concert",
         "when": "12.12.2023",
         "venue": "Rock cafe",
         "artists": [

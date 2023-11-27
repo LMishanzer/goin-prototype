@@ -1,0 +1,21 @@
+.detailsContainer {
+    background-color: #09111C;
+    padding: 50px;
+    color: #fff;
+}
+
+.infoProp {
+    display: inline-block;
+    width: 300px;
+}
+
+.infoContainer {
+    display: flex;
+    gap: 200px;
+    font-size: 20px;
+    margin-top: 55px;
+}
+
+.infoContainer ul li {
+    margin-top: 40px;
+}
