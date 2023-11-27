@@ -213,14 +213,17 @@
         ],
         "upcomingEvents": [
             {
+                "id": "1",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "1",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "1",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }
@@ -256,14 +259,17 @@
         ],
         "upcomingEvents": [
             {
+                "id": "2",
                 "place": "Rock cafe",
                 "date": "12.12.2023"
             },
             {
+                "id": "2",
                 "place": "Airport Letňany",
                 "date": "09.05.2024"
             },
             {
+                "id": "2",
                 "place": "O2 arena",
                 "date": "31.07.2024"
             }

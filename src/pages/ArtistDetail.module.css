@@ -15,6 +15,7 @@
 .info {
     font-size: 25px;
     line-height: 50px;
+    width: auto;
 }
 
 .mainContent {
@@ -26,4 +27,43 @@
 
 .image {
     border-radius: 20px;
+    width: 1000px;
+}
+
+.relatedArtists {
+    width: 1000px;
+}
+
+.relatedLabel {
+    color: #fff;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.additional {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.eventList {
+    flex-basis: 200px;
+    flex-grow: 0;
+    margin: 50px 100px;
+}
+
+.eventCard {
+    background-color: #281842;
+    border-radius: 10px;
+    color: #fff;
+    width: 600px;
+    height: 80px;
+    padding: 25px 20px;
+}
+
+.chevron {
+    margin-left: auto;
+    float: right;
 }
