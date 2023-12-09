@@ -38,7 +38,7 @@ export const EventDetail = () => {
             </li>
             <li>
               <span className={styles.infoProp}>When:</span>
-              {event.when}
+              {new Date(event.when).toLocaleDateString()}
             </li>
             <li>
               <span className={styles.infoProp}>Entry:</span>CZK 600–2600

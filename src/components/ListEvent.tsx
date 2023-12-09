@@ -3,6 +3,7 @@ import { Link, Stack, Typography, styled } from "@mui/material";
 import { FC } from "react";
 import { CardEvent } from "./CardEvent";
 import { Link as RouterLink } from "react-router-dom";
+import data from "../data/artists.json";
 
 type Artist = {
   id: number;
@@ -24,43 +25,14 @@ export const ListEvent: FC<{ title: string; [key: string]: any }> = ({
   title,
   ...props
 }) => {
-  const events: Artist[] = [
-    {
-      id: 0,
-      name: "Red Hot Chilli Peppers",
-      img: "/images/red_hot.png",
-      location: "Rock Cafe",
-      date: new Date(),
-    },
-    {
-      id: 1,
-      name: "Yzomanidas",
-      img: "/images/yzomanidas.png",
-      location: "Rock Cafe",
-      date: new Date(),
-    },
-    {
-      id: 2,
-      name: "Girl In Red",
-      img: "/images/girl_in_red.png",
-      location: "Rock Cafe",
-      date: new Date(),
-    },
-    {
-      id: 3,
-      name: "Green Day",
-      img: "/images/green_day.png",
-      location: "Rock Cafe",
-      date: new Date(),
-    },
-    {
-      id: 4,
-      name: "Arctic Monkeys",
-      img: "/images/arctic_monkeys.png",
-      location: "Rock Cafe",
-      date: new Date(),
-    },
-  ];
+  const events: Artist[] = data.filter(a => Number(a.id) <= 4 && Number(a.id) >= 0)
+      .map(a => ({
+        id: a.id,
+        name: a.name,
+        img: a.image,
+        location: a.upcomingEvents[0].place,
+        date: new Date(a.upcomingEvents[0].date)
+      } as unknown as Artist));
 
   return (
     <div {...props}>
