@@ -76,5 +76,161 @@
                 "image": "/images/rammstein.jpg"
             }
         ]
+    },
+    {
+        "id": "18",
+        "name": "Metallica concert",
+        "when": "2024-10-05",
+        "venue": "Metal Stadium",
+        "artists": [
+            {
+                "id": "5",
+                "name": "Metallica",
+                "image": "/images/metallica.jpg"
+            }
+        ]
+    },
+    {
+        "id": "19",
+        "name": "Metallica concert",
+        "when": "2024-06-18",
+        "venue": "Rock City",
+        "artists": [
+            {
+                "id": "5",
+                "name": "Metallica",
+                "image": "/images/metallica.jpg"
+            }
+        ]
+    },
+    {
+        "id": "20",
+        "name": "Megadeth concert",
+        "when": "2024-10-05",
+        "venue": "Metal Stadium",
+        "artists": [
+            {
+                "id": "6",
+                "name": "Megadeth",
+                "image": "/images/megadeth.jpg"
+            }
+        ]
+    },
+    {
+        "id": "21",
+        "name": "Megadeth concert",
+        "when": "2024-06-18",
+        "venue": "Rock City",
+        "artists": [
+            {
+                "id": "6",
+                "name": "Megadeth",
+                "image": "/images/megadeth.jpg"
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "name": "Slayer concert",
+        "when": "2024-10-05",
+        "venue": "Metal Stadium",
+        "artists": [
+            {
+                "id": "7",
+                "name": "Slayer",
+                "image": "/images/slayer.jpg"
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "name": "Slayer concert",
+        "when": "2024-06-18",
+        "venue": "Rock City",
+        "artists": [
+            {
+                "id": "7",
+                "name": "Slayer",
+                "image": "/images/slayer.jpg"
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "name": "Queen concert",
+        "when": "2024-11-30",
+        "venue": "Wembley Stadium",
+        "artists": [
+            {
+                "id": "8",
+                "name": "Queen",
+                "image": "/images/queen.jpg"
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "name": "Queen concert",
+        "when": "2024-05-05",
+        "venue": "Royal Albert Hall",
+        "artists": [
+            {
+                "id": "8",
+                "name": "Queen",
+                "image": "/images/queen.jpg"
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "name": "David Bowie concert",
+        "when": "2024-09-20",
+        "venue": "Royal Albert Hall",
+        "artists": [
+            {
+                "id": "9",
+                "name": "David Bowie",
+                "image": "/images/david_bowie.jpg"
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "name": "David Bowie concert",
+        "when": "2024-05-05",
+        "venue": "Wembley Stadium",
+        "artists": [
+            {
+                "id": "9",
+                "name": "David Bowie",
+                "image": "/images/david_bowie.jpg"
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "name": "Elton John concert",
+        "when": "2024-02-14",
+        "venue": "Royal Albert Hall",
+        "artists": [
+            {
+                "id": "10",
+                "name": "Elton John",
+                "image": "/images/elton_john.jpg"
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "name": "Elton John concert",
+        "when": "2024-05-05",
+        "venue": "Wembley Stadium",
+        "artists": [
+            {
+                "id": "10",
+                "name": "Elton John",
+                "image": "/images/elton_john.jpg"
+            }
+        ]
     }
 ]

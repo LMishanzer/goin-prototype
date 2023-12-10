@@ -154,7 +154,7 @@
         "name": "Arctic Monkeys",
         "categories": ["Indie", "Rock", "Alternative"],
         "info": "Arctic Monkeys are an English rock band formed in Sheffield in 2002. The group consists of lead singer Alex Turner, drummer Matt Helders, guitarist Jamie Cook and bassist Nick O'Malley. Former bassist Andy Nicholson left the band in 2006 shortly after their debut album was released. Arctic Monkeys were heralded as one of the first bands to come to public attention via the Internet, with commentators suggesting they represented the possibility of a change in the way in which new bands are promoted and marketed. Their debut album, Whatever People Say I Am, That's What I'm Not (2006), received widespread critical acclaim upon release and topped the UK Albums Chart, becoming the fastest-selling debut album in British chart history at the time. It won Best British Album at the 2007 Brit Awards and has since been hailed as one of the greatest debut albums. The band's second album, Favourite Worst Nightmare (2007), was also acclaimed by critics and won Best British Album at the 2008 Brit Awards. They went on to release Humbug (2009) and Suck It and See (2011), both of which were well-received critically, albeit not to the extent of their first two albums.",
-        "image": "/images/red_hot.png",
+        "image": "/images/arctic_monkeys.png",
         "relatedArtists": [
             {
                 "id": "0",
@@ -296,6 +296,228 @@
                 "link_id": 2,
                 "place": "O2 arena",
                 "date": "2024-31-07"
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Metallica",
+        "info": "Metallica is an American heavy metal band formed in 1981 in Los Angeles, California. The band achieved massive commercial success with albums such as 'Master of Puppets' and 'Metallica' (The Black Album).",
+        "image": "/images/metallica.jpg",
+        "categories": ["Heavy Metal", "Thrash Metal"],
+        "relatedArtists": [
+            {
+                "id": "6",
+                "name": "Megadeth",
+                "image": "/images/megadeth.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-11-15"
+            },
+            {
+                "id": "7",
+                "name": "Slayer",
+                "image": "/images/slayer.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-03-22"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 18,
+                "link_id": 5,
+                "place": "Metal Stadium",
+                "date": "2024-10-05"
+            },
+            {
+                "id": 19,
+                "link_id": 5,
+                "place": "Rock City",
+                "date": "2024-06-18"
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Megadeth",
+        "info": "Megadeth is an American thrash metal band formed in Los Angeles in 1983 by guitarist Dave Mustaine and bassist David Ellefson. The band has released numerous albums and is known for its technical style.",
+        "image": "/images/megadeth.jpg",
+        "categories": ["Thrash Metal"],
+        "relatedArtists": [
+            {
+                "id": "5",
+                "name": "Metallica",
+                "image": "/images/metallica.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-11-15"
+            },
+            {
+                "id": "7",
+                "name": "Slayer",
+                "image": "/images/slayer.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-03-22"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 20,
+                "link_id": 6,
+                "place": "Metal Stadium",
+                "date": "2024-10-05"
+            },
+            {
+                "id": 21,
+                "link_id": 6,
+                "place": "Rock City",
+                "date": "2024-06-18"
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Slayer",
+        "info": "Slayer was an American thrash metal band formed in 1981 in Huntington Park, California. The band is credited as one of the 'Big Four' thrash metal bands alongside Metallica, Megadeth, and Anthrax.",
+        "image": "/images/slayer.jpg",
+        "categories": ["Thrash Metal"],
+        "relatedArtists": [
+            {
+                "id": "5",
+                "name": "Metallica",
+                "image": "/images/metallica.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-11-15"
+            },
+            {
+                "id": "6",
+                "name": "Megadeth",
+                "image": "/images/megadeth.jpg",
+                "place": "Metal Stadium",
+                "date": "2024-03-22"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 22,
+                "link_id": 7,
+                "place": "Metal Stadium",
+                "date": "2024-10-05"
+            },
+            {
+                "id": 23,
+                "link_id": 7,
+                "place": "Rock City",
+                "date": "2024-06-18"
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Queen",
+        "info": "Queen is a British rock band formed in London in 1970. The classic lineup consisted of Freddie Mercury, Brian May, Roger Taylor, and John Deacon. Queen is known for their diverse musical style and theatrical live performances.",
+        "image": "/images/queen.jpg",
+        "categories": ["Rock", "Classic Rock"],
+        "relatedArtists": [
+            {
+                "id": "9",
+                "name": "David Bowie",
+                "image": "/images/david_bowie.jpg",
+                "place": "Royal Albert Hall",
+                "date": "2024-09-20"
+            },
+            {
+                "id": "10",
+                "name": "Elton John",
+                "image": "/images/elton_john.jpg",
+                "place": "Wembley Stadium",
+                "date": "2024-02-14"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 24,
+                "link_id": 8,
+                "place": "Wembley Stadium",
+                "date": "2024-11-30"
+            },
+            {
+                "id": 25,
+                "link_id": 8,
+                "place": "Royal Albert Hall",
+                "date": "2024-05-05"
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "David Bowie",
+        "info": "David Bowie was an English singer-songwriter and actor. He was a leading figure in the music industry and is regarded as one of the most influential musicians of the 20th century.",
+        "image": "/images/david_bowie.jpg",
+        "categories": ["Rock", "Pop"],
+        "relatedArtists": [
+            {
+                "id": "8",
+                "name": "Queen",
+                "image": "/images/queen.jpg",
+                "place": "Wembley Stadium",
+                "date": "2024-11-30"
+            },
+            {
+                "id": "10",
+                "name": "Elton John",
+                "image": "/images/elton_john.jpg",
+                "place": "Royal Albert Hall",
+                "date": "2024-02-14"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 26,
+                "link_id": 9,
+                "place": "Royal Albert Hall",
+                "date": "2024-09-20"
+            },
+            {
+                "id": 27,
+                "link_id": 9,
+                "place": "Wembley Stadium",
+                "date": "2024-05-05"
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Elton John",
+        "info": "Elton John is an English singer, songwriter, and pianist. He has worked with lyricist Bernie Taupin as his songwriting partner since 1967. Known for his flamboyant stage presence, Elton John has sold over 300 million records worldwide.",
+        "image": "/images/elton_john.jpg",
+        "categories": ["Pop", "Rock"],
+        "relatedArtists": [
+            {
+                "id": "8",
+                "name": "Queen",
+                "image": "/images/queen.jpg",
+                "place": "Wembley Stadium",
+                "date": "2024-11-30"
+            },
+            {
+                "id": "9",
+                "name": "David Bowie",
+                "image": "/images/david_bowie.jpg",
+                "place": "Royal Albert Hall",
+                "date": "2024-09-20"
+            }
+        ],
+        "upcomingEvents": [
+            {
+                "id": 28,
+                "link_id": 10,
+                "place": "Royal Albert Hall",
+                "date": "2024-02-14"
+            },
+            {
+                "id": 29,
+                "link_id": 10,
+                "place": "Wembley Stadium",
+                "date": "2024-05-05"
             }
         ]
     }
