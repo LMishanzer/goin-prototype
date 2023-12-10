@@ -57,7 +57,10 @@ export const CardEvent: FC<CardEventProps> = ({
           borderRadius={"13px"}
           padding={"15px"}
         >
-          {date.toLocaleDateString()}
+          {date.toLocaleDateString("en-EN") +
+            ` [${date.toLocaleDateString("en-EN", {
+              weekday: "long",
+            })}]`}
         </Typography>
       </div>
     </ButtonBase>

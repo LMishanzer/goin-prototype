@@ -7,6 +7,7 @@ interface OverlayProps {
   title: string;
   open: boolean;
   onClose: () => void;
+  setCategory: (category: string) => void;
 }
 
 const categories = [
@@ -32,7 +33,13 @@ const style = {
   color: "#fff",
 };
 
-export const Overlay: FC<OverlayProps> = ({ title, open, onClose }) => {
+export const Overlay: FC<OverlayProps> = ({ title, open, onClose, setCategory }) => {
+
+  const onCategoryClick = (category: string) => {
+    setCategory(category)
+    onClose()
+  }
+
   return (
     <Modal
       aria-labelledby="transition-modal-title"
@@ -97,7 +104,7 @@ export const Overlay: FC<OverlayProps> = ({ title, open, onClose }) => {
             }}
           >
             {categories.map((category) => (
-              <CategoryCard {...category} />
+              <CategoryCard {...category} onClick={onCategoryClick} />
             ))}
           </div>
         </Box>

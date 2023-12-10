@@ -152,7 +152,12 @@ export const Header: FC = () => {
         </section>
       </div>
 
-      <Overlay open={open} onClose={handleClose} title={"CHOOSE CATEGORY"} />
+      <Overlay
+        open={open}
+        onClose={handleClose}
+        title={"CHOOSE CATEGORY"}
+        setCategory={setSearchQuery}
+      />
     </header>
   );
 };

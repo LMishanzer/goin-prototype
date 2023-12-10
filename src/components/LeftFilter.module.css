@@ -1,0 +1,12 @@
+.left-filter {
+    position: fixed;
+    left: 0;
+    top: 20%;
+    left: 20px;
+}
+
+.filters {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}

@@ -6,11 +6,16 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import hStyles from "./Header.module.css";
 
-export const SearchHeader: FC = () => {
+interface SearchHeaderParams {
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
+}
+
+export const SearchHeader: FC<SearchHeaderParams> = ({
+  searchQuery,
+  setSearchQuery,
+}) => {
   const [searchParams] = useSearchParams();
-  const [searchQuery, setSearchQuery] = useState<string>(
-    searchParams.get("query") ?? ""
-  );
 
   const navigate = useNavigate();
 
@@ -24,14 +29,18 @@ export const SearchHeader: FC = () => {
     }
   };
 
+  const update = () => {
+    setSearchQuery(searchParams.get("query") ?? "");
+  };
+
   const goBack = () => {
     navigate(-1);
-    setSearchQuery(searchParams.get("query") ?? "");
+    update();
   };
 
   const goForward = () => {
     navigate(1);
-    setSearchQuery(searchParams.get("query") ?? "");
+    update();
   };
 
   return (

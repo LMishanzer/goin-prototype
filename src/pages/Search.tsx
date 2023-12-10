@@ -1,4 +1,4 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { Footer } from "../templates/Footer";
 import { SearchHeader } from "../templates/SearchHeader";
@@ -7,11 +7,12 @@ import { CardArtist } from "../components/CardArtist";
 import { Link as RouterLink } from "react-router-dom";
 import artists from "../data/artists.json";
 import { CardEvent } from "../components/CardEvent";
+import { LeftFilter } from "../components/LeftFilter";
 
 type Artist = (typeof artists)[0];
 
 export const PageSearch: FC = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
 
   const query = searchParams.get("query") ?? "";
 
@@ -32,13 +33,17 @@ export const PageSearch: FC = () => {
     }))
   );
 
+  const [searchQuery, setSearchQuery] = useState<string>(
+    searchParams.get("query") ?? ""
+  );
+
   return (
     <div
       style={{
         background: "#0C1326",
       }}
     >
-      <SearchHeader />
+      <SearchHeader searchQuery={searchQuery} setSearchQuery={setSearchQuery} />
       <div
         style={{ minHeight: "100vh", padding: "40px" }}
         className={"content-wrapper"}
@@ -117,6 +122,7 @@ export const PageSearch: FC = () => {
           </div>
         )}
       </div>
+      <LeftFilter setFilter={setSearchQuery}/>
       <Footer />
     </div>
   );

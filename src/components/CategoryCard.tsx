@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 interface CategoryCardProps {
   name: string;
   color: string;
+  onClick: (category: string) => void;
 }
 
 export const CardButton = styled(Button)({
@@ -19,10 +20,15 @@ export const CardButton = styled(Button)({
   alignItems: "center",
 });
 
-export const CategoryCard: FC<CategoryCardProps> = ({ name, color }) => {
+export const CategoryCard: FC<CategoryCardProps> = ({
+  name,
+  color,
+  onClick,
+}) => {
   const navigate = useNavigate();
 
   const searchByCategory = () => {
+    onClick(name);
     navigate(`/search?query=${name}`);
   };
 

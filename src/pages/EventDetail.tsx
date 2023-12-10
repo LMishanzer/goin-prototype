@@ -19,6 +19,8 @@ export const EventDetail = () => {
     setArtist(_event);
   }, [eventId]);
 
+  const eventDate = event ? new Date(event.when) : null;
+
   return event ? (
     <div style={{ background: "#09111C" }}>
       <GoinHeader />
@@ -38,7 +40,10 @@ export const EventDetail = () => {
             </li>
             <li>
               <span className={styles.infoProp}>When:</span>
-              {new Date(event.when).toLocaleDateString()}
+              {eventDate?.toLocaleDateString("en-EN") +
+                ` [${eventDate?.toLocaleDateString("en-EN", {
+                  weekday: "long",
+                })}]`}
             </li>
             <li>
               <span className={styles.infoProp}>Entry:</span>CZK 600–2600
