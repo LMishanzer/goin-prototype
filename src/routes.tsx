@@ -6,6 +6,7 @@ import { ForPerformers } from "./pages/ForPerformers";
 import { ArtistDetail } from "./pages/ArtistDetail";
 import { PageSearch } from "./pages/Search";
 import {EventDetail} from "./pages/EventDetail.tsx";
+import {Artists} from "./pages/Artists.tsx";
 
 export const routes = createBrowserRouter([
   {
@@ -40,4 +41,8 @@ export const routes = createBrowserRouter([
     path: "search",
     element: <PageSearch />,
   },
+  {
+    path: "artists",
+    element: <Artists />
+  }
 ]);

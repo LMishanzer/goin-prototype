@@ -1,9 +1,10 @@
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { Link, Stack, Typography, styled } from "@mui/material";
+import { Stack, Typography, styled } from "@mui/material";
 import { FC } from "react";
 import { CardEvent } from "./CardEvent";
 import { Link as RouterLink } from "react-router-dom";
 import data from "../data/artists.json";
+import styles from "./ListArtist.module.css";
 
 type Artist = {
   id: number;
@@ -49,17 +50,17 @@ export const ListEvent: FC<{ title: string; [key: string]: any }> = ({
             {title}
           </GradientTypography>
         </h2>
-        <Link
-          href="#"
-          underline="hover"
+        <RouterLink
+          to={'/artists'}
           style={{
             display: "flex",
             alignItems: "center",
           }}
+          className={styles.link}
         >
           View All
           <ChevronRightIcon />
-        </Link>
+        </RouterLink>
       </div>
 
       <Stack direction="row" spacing={4} justifyContent="space-between">

@@ -1,8 +1,10 @@
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
-import { Link, Stack, Typography, styled } from "@mui/material";
+import { Stack, Typography, styled } from "@mui/material";
 import { FC } from "react";
 import { CardArtist } from "./CardArtist";
 import { Link as RouterLink } from "react-router-dom";
+import data from "../data/artists.json";
+import styles from "./ListArtist.module.css";
 
 type Artist = { id: number; name: string; img: string };
 
@@ -15,13 +17,14 @@ const GradientTypography = styled(Typography)({
 });
 
 export const ListArtist: FC<{ [key: string]: any }> = (props) => {
-  const artists: Artist[] = [
-    { id: 0, name: "Red Hot Chilli Peppers", img: "/images/red_hot.png" },
-    { id: 1, name: "Yzomanidas", img: "/images/yzomanidas.png" },
-    { id: 2, name: "Girl In Red", img: "/images/girl_in_red.png" },
-    { id: 3, name: "Green Day", img: "/images/green_day.png" },
-    { id: 4, name: "Arctic Monkeys", img: "/images/arctic_monkeys.png" },
-  ];
+  const artists: Artist[] = data.filter(a => Number(a.id) <= 4 && Number(a.id) >= 0)
+      .map(a => ({
+        id: a.id,
+        name: a.name,
+        img: a.image,
+        location: a.upcomingEvents[0].place,
+        date: new Date(a.upcomingEvents[0].date)
+      } as unknown as Artist));
 
   return (
     <div {...props}>
@@ -38,17 +41,17 @@ export const ListArtist: FC<{ [key: string]: any }> = (props) => {
             Trending Artists
           </GradientTypography>
         </h2>
-        <Link
-          href="#"
-          underline="hover"
+        <RouterLink
+          to={'/artists'}
           style={{
             display: "flex",
             alignItems: "center",
           }}
+          className={styles.link}
         >
           View All
           <ChevronRightIcon />
-        </Link>
+        </RouterLink>
       </div>
 
       <Stack
